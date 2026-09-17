@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ji Hye Kang — Portfolio</title>
+<style>
+  :root {
+    --bg: #faf9f7;
+    --text: #1f2328;
+    --muted: #5b6169;
+    --accent: #6b4f3b;
+    --line: #e4ded6;
+    --card: #ffffff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: 'Georgia', 'Noto Serif KR', serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+  }
+  header {
+    padding: 64px 24px 40px;
+    text-align: center;
+    border-bottom: 1px solid var(--line);
+  }
+  header h1 {
+    font-size: 2.4rem;
+    margin: 0 0 8px;
+    letter-spacing: 0.02em;
+  }
+  header p.role {
+    color: var(--muted);
+    font-size: 1.05rem;
+    margin: 0 0 20px;
+  }
+  header .contact {
+    font-size: 0.95rem;
+    color: var(--muted);
+  }
+  header .contact a {
+    color: var(--accent);
+    text-decoration: none;
+  }
+  header .contact a:hover { text-decoration: underline; }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6px 18px;
+    padding: 16px 24px;
+    background: var(--card);
+    border-bottom: 1px solid var(--line);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  nav a {
+    color: var(--text);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-family: -apple-system, sans-serif;
+    padding: 4px 2px;
+    border-bottom: 2px solid transparent;
+  }
+  nav a:hover { border-bottom-color: var(--accent); }
+
+  main {
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 48px 24px 96px;
+  }
+  section {
+    margin-bottom: 48px;
+  }
+  section h2 {
+    font-size: 1.3rem;
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+    color: var(--accent);
+  }
+  .entry {
+    margin-bottom: 22px;
+  }
+  .entry-title {
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  .entry-sub {
+    color: var(--muted);
+    font-size: 0.92rem;
+    margin: 2px 0 8px;
+  }
+  .entry ul {
+    margin: 6px 0 0;
+    padding-left: 20px;
+  }
+  .entry li {
+    margin-bottom: 4px;
+    font-size: 0.95rem;
+  }
+  .entry-italic {
+    font-style: italic;
+    font-size: 0.92rem;
+    color: var(--muted);
+    margin: 4px 0;
+  }
+  p.intro-text {
+    font-size: 0.97rem;
+    color: var(--text);
+  }
+  .tag-line {
+    font-size: 0.95rem;
+  }
+  a.inline-link {
+    color: var(--accent);
+  }
+  footer {
+    text-align: center;
+    padding: 32px 24px;
+    color: var(--muted);
+    font-size: 0.85rem;
+    font-family: -apple-system, sans-serif;
+    border-top: 1px solid var(--line);
+  }
+
+  @media (max-width: 600px) {
+    header h1 { font-size: 1.9rem; }
+    nav { gap: 4px 12px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Ji Hye Kang</h1>
+  <p class="role">M.A. Candidate, Applied English Linguistics &amp; Translation Studies · Kyung Hee University</p>
+  <p class="intro-text" style="max-width:560px; margin:0 auto 18px;">
+    Researching second language acquisition, language assessment, and automated scoring of elicited imitation — with a focus on making L2 proficiency measurement more accessible and evidence-based.
+  </p>
+  <p class="contact">
+    <a href="mailto:wiz8838@khu.ac.kr">wiz8838@khu.ac.kr</a>
+  </p>
+</header>
+
+<nav>
+  <a href="#education">Education</a>
+  <a href="#research-interests">Research Interests</a>
+  <a href="#publications">Publications</a>
+  <a href="#presentations">Presentations</a>
+  <a href="#research-experience">Research Experience</a>
+  <a href="#teaching">Teaching</a>
+  <a href="#honors">Honors &amp; Funding</a>
+  <a href="#skills">Skills</a>
+  <a href="#service">Service</a>
+</nav>
+
+<main>
+
+  <section id="education">
+    <h2>Education</h2>
+    <div class="entry">
+      <div class="entry-title">Kyung Hee University, Seoul, Korea</div>
+      <div class="entry-sub">M.A. in Applied English Linguistics and Translation Studies (AELTS) · Mar. 2025 – Feb. 2027 (expected)</div>
+      <ul>
+        <li>GPA: 4.23 / 4.30</li>
+        <li>Thesis: <em>Evaluating rubric-based LLM scoring for elicited imitation: Human-score correspondence and construct-related evidence</em> (In Prep)</li>
+      </ul>
+    </div>
+    <div class="entry">
+      <div class="entry-title">Kyung Hee University, Seoul, Korea</div>
+      <div class="entry-sub">B.A. in Applied English Linguistics and Translation Studies (AELTS) · Mar. 2020 – Aug. 2024</div>
+    </div>
+  </section>
+
+  <section id="research-interests">
+    <h2>Research Interests</h2>
+    <p class="tag-line">Second language acquisition &nbsp;·&nbsp; language assessment and validation &nbsp;·&nbsp; automated scoring of elicited imitation &nbsp;·&nbsp; language ideologies and teacher legitimacy</p>
+  </section>
+
+  <section id="publications">
+    <h2>Manuscripts Submitted for Publication</h2>
+    <div class="entry">
+      <ul>
+        <li>Kang, J. H., &amp; Park, H. I. (submitted). <em>Automated Elicited Imitation Scoring: Evaluating Word Error Rate as a Measure of L2 Proficiency.</em> Language Testing.</li>
+        <li>Kang, J. H., &amp; Park, H. I. (submitted). <em>Reconfiguring native speakerism? Korean university students' evaluations of English teacher legitimacy and English accents.</em> Language Awareness.</li>
+        <li>Park, H. I., Kang, J. H., &amp; Cheon, Y. Y. (submitted). <em>The monolingual view of bilingualism scale: Development and initial validation among university students in South Korea.</em> English Teaching.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="presentations">
+    <h2>Presentations</h2>
+    <div class="entry">
+      <ul>
+        <li>Kang, J. H. (Sep. 2026). <em>Beyond Native Speakerism: A Bourdieusian Perspective on Habitus and Cultural Capital among South Korean University Students.</em> Applied Linguistics Association of Korea International Conference (ALAK), Seoul, Korea.</li>
+        <li>Park, H. I., &amp; Kang, J. H. (Sep. 2025). <em>Toward Accessible Automated Scoring: Using ChatGPT to Assess EIT Responses.</em> Second Language Research Forum (SLRF), AZ, U.S.</li>
+        <li>Park, H. I., &amp; Kang, J. H. (Sep. 2025). <em>Toward Accessible Automated Scoring: Using ChatGPT to Assess EIT Responses.</em> Applied Linguistics Association of Korea International Conference (ALAK), Seoul, Korea.</li>
+        <li>Kang, J. H. (Mar. 2024). <em>Ethical Issues in Quoting Foreign Media: A Case Study in the Itaewon Crowd Crush in South Korea.</em> PolyU Undergraduate Conference on Applied Linguistics and Language Studies (PolyU-CALLS), Hong Kong.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="research-experience">
+    <h2>Research Experience</h2>
+    <div class="entry">
+      <div class="entry-title">Research Assistant, Kyung Hee University</div>
+      <div class="entry-sub">Sep. 2026 – Present</div>
+      <div class="entry-italic">Project: Developing an EIT Response Corpus for an AI-Based Second Language Assessment and Diagnostic System</div>
+      <ul>
+        <li>Recruit participants and administer elicited imitation tasks (EITs).</li>
+        <li>Transcribe participants' spoken responses for inclusion in an EIT response corpus.</li>
+      </ul>
+    </div>
+    <div class="entry">
+      <div class="entry-title">Research Assistant, Kyung Hee University</div>
+      <div class="entry-sub">Sep. 2023 – Feb. 2024</div>
+      <div class="entry-italic">Project: Exploring Elicited Imitation as a Measure of L2 Proficiency</div>
+      <ul>
+        <li>Assisted with EIT administration and transcribed participants' spoken responses for analysis.</li>
+        <li>Research scope: 100 participants; 3,000 transcribed responses.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="teaching">
+    <h2>Teaching Experience</h2>
+    <div class="entry">
+      <div class="entry-title">Teaching Assistant, Department of English Language and Literature, Kyung Hee University</div>
+      <div class="entry-sub">Mar. 2025 – Aug. 2026</div>
+      <ul>
+        <li>Supported undergraduate and graduate courses through lecture preparation, assignment grading, and academic assistance to students.</li>
+        <li>Assisted with departmental administration and faculty-student communication.</li>
+      </ul>
+    </div>
+    <div class="entry">
+      <div class="entry-title">Teaching Assistant, Department of Applied English Linguistics and Translation Studies, Kyung Hee University</div>
+      <div class="entry-sub">Apr. 2026 – Jun. 2026</div>
+      <ul>
+        <li>Developed video tutorials using JASP to explain t-tests, correlation, and regression for the graduate course <em>Research Methods in Applied Linguistics</em>.</li>
+      </ul>
+    </div>
+    <div class="entry">
+      <div class="entry-title">Guest Instructor, BK21 Future Faculty Support Program, Kyung Hee University</div>
+      <div class="entry-sub">May 2025</div>
+      <ul>
+        <li>Designed and taught a three-week module on media and news translation for master's and doctoral students in Applied English Linguistics and Translation Studies.</li>
+        <li>Delivered the module as part of the graduate course <em>Theory and Practice in Translation</em>.</li>
+        <li>Selected for the BK21-supported FAST program and completed three teaching methodology courses before teaching.</li>
+      </ul>
+    </div>
+    <div class="entry">
+      <div class="entry-title">English Reading Tutor, ENOVELS English Library, Seoul</div>
+      <div class="entry-sub">Aug. 2024 – Feb. 2025</div>
+      <ul>
+        <li>Guided elementary to high school students in extensive reading activities to enhance L2 literacy development.</li>
+        <li>Facilitated post-reading discussions and provided corrective feedback on students' spoken English.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="honors">
+    <h2>Honors, Awards &amp; Funding</h2>
+    <div class="entry">
+      <ul>
+        <li><strong>Teaching Assistantship</strong>, Graduate School of Kyung Hee University (Mar. 2025 – Aug. 2026) — Full tuition waiver awarded for academic and teaching assistance.</li>
+        <li><strong>Conference Presentation Grant (ALAK 2025)</strong>, Graduate School of Kyung Hee University (Sep. 2025)</li>
+        <li><strong>Conference Presentation Grant (SLRF 2025)</strong>, Graduate School of Kyung Hee University (Sep. 2025)</li>
+        <li><strong>Daniel Scholarship for Future Leaders</strong>, Global Mission Church (Sep. 2025)</li>
+        <li><strong>Conference Travel Grant</strong>, Hong Kong Polytechnic University (Mar. 2024)</li>
+        <li><strong>Mosaic Scholarship for Language Excellence</strong>, Kyung Hee University (Aug. 2021)</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="entry">
+      <ul>
+        <li><strong>Statistical software:</strong> R; JASP; Python for intraclass correlation and interrater reliability calculations.</li>
+        <li><strong>Quantitative methods:</strong> Intraclass correlation coefficients; Bland–Altman agreement analysis; regression analysis; Pearson correlation with confidence intervals; analysis of signed score differences in relation to proficiency.</li>
+        <li><strong>Qualitative methods:</strong> Thematic analysis of open-ended survey responses.</li>
+        <li><strong>Research procedures:</strong> EIT administration; transcription; rubric-based scoring; survey development and distribution.</li>
+        <li><strong>Languages:</strong> Korean (native); English (fluent).</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="service">
+    <h2>Service</h2>
+    <div class="entry">
+      <div class="entry-title">Volunteer Translator, Compassion Korea</div>
+      <div class="entry-sub">Sep. 2021 – Mar. 2023</div>
+      <ul>
+        <li>Translated over 60 letters from English into Korean to support correspondence between sponsors and their children.</li>
+      </ul>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  © 2026 Ji Hye Kang
+</footer>
+
+</body>
+</html>
