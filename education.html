@@ -36,6 +36,40 @@
   header .contact { font-size: 0.95rem; color: var(--muted); }
   header .contact a { color: var(--accent); text-decoration: none; }
   header .contact a:hover { text-decoration: underline; }
+  header .banner {
+    width: 100%;
+    max-width: 320px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    display: block;
+    border: 3px solid var(--card);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+  }
+  .photo-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 16px;
+  }
+  .photo-row figure {
+    flex: 1 1 300px;
+    margin: 0;
+  }
+  .photo-row img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    display: block;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+  }
+  .photo-row figcaption {
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 6px;
+    font-family: -apple-system, sans-serif;
+  }
 
   nav {
     display: flex;
@@ -99,11 +133,9 @@
 <body>
 
 <header>
+  <img class="banner" src="images/profile.jpg" alt="Ji Hye Kang">
   <h1><a href="index.html">Ji Hye Kang</a></h1>
   <p class="role">M.A. Candidate, Applied English Linguistics &amp; Translation Studies · Kyung Hee University</p>
-  <p class="intro-text" style="max-width:560px; margin:0 auto 18px;">
-    Researching second language acquisition, language assessment, and automated scoring of elicited imitation — with a focus on making L2 proficiency measurement more accessible and evidence-based.
-  </p>
   <p class="contact">
     <a href="mailto:wiz8838@khu.ac.kr">wiz8838@khu.ac.kr</a>
   </p>
