@@ -113,6 +113,9 @@
     letter-spacing: 0.02em;
   }
   .entry { margin-bottom: 20px; }
+  .entry-with-logo { display: flex; gap: 14px; align-items: flex-start; }
+  .entry-with-logo .entry-logo { width: 48px; height: 48px; object-fit: contain; flex: 0 0 auto; margin-top: 2px; }
+  .entry-with-logo .entry-body { flex: 1 1 auto; min-width: 0; }
   .entry-title { font-weight: bold; font-size: 0.98rem; }
   .pres-title { font-weight: normal; font-size: 0.98rem; }
   .inst-line { font-size: 0.9rem; margin: 2px 0 0; }
@@ -174,17 +177,23 @@
 
   <section>
     <h2>Education</h2>
-    <div class="entry">
-      <div class="entry-title">Kyung Hee University, Seoul, Korea</div>
-      <div class="entry-sub">M.A. in Applied English Linguistics and Translation Studies (AELTS) · Mar. 2025 – Feb. 2027 (expected)</div>
-      <ul>
-        <li>GPA: 4.23 / 4.30</li>
-        <li>Thesis: <em>Evaluating rubric-based LLM scoring for elicited imitation: Human-score correspondence and construct-related evidence</em></li>
-      </ul>
+    <div class="entry entry-with-logo">
+      <img class="entry-logo" src="images/khu-logo.png" alt="Kyung Hee University logo">
+      <div class="entry-body">
+        <div class="entry-title">Kyung Hee University, Seoul, Korea</div>
+        <div class="entry-sub">M.A. in Applied English Linguistics and Translation Studies (AELTS) · Mar. 2025 – Feb. 2027 (expected)</div>
+        <ul>
+          <li>GPA: 4.23 / 4.30</li>
+          <li>Thesis: <em>Evaluating rubric-based LLM scoring for elicited imitation: Human-score correspondence and construct-related evidence</em></li>
+        </ul>
+      </div>
     </div>
-    <div class="entry">
-      <div class="entry-title">Kyung Hee University, Seoul, Korea</div>
-      <div class="entry-sub">B.A. in Applied English Linguistics and Translation Studies (AELTS) · Mar. 2020 – Aug. 2024</div>
+    <div class="entry entry-with-logo">
+      <img class="entry-logo" src="images/khu-logo.png" alt="Kyung Hee University logo">
+      <div class="entry-body">
+        <div class="entry-title">Kyung Hee University, Seoul, Korea</div>
+        <div class="entry-sub">B.A. in Applied English Linguistics and Translation Studies (AELTS) · Mar. 2020 – Aug. 2024</div>
+      </div>
     </div>
   </section>
 
