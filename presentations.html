@@ -66,7 +66,7 @@
     flex: 1 1 280px;
     max-width: 340px;
   }
-  .with-photo img {
+  .with-photo .li-photo img {
     width: 100%;
     height: auto;
     border-radius: 6px;
@@ -91,11 +91,12 @@
     text-decoration: none;
     font-size: 0.85rem;
     font-family: 'Noto Serif', 'Noto Serif KR', serif;
-    padding: 4px 2px;
-    border-bottom: 2px solid transparent;
+    padding: 6px 10px;
+    border-radius: 4px;
+    transition: background-color 0.15s ease, color 0.15s ease;
   }
-  nav a:hover { border-bottom-color: var(--accent2); }
-  nav a.active { border-bottom-color: var(--accent2); color: var(--accent2); font-weight: bold; }
+  nav a:hover { background-color: var(--accent2); color: var(--bg); }
+  nav a.active { background-color: var(--accent2); color: var(--bg); font-weight: bold; }
 
   main {
     max-width: 780px;
@@ -117,9 +118,14 @@
   .entry ul { margin: 6px 0 0; padding-left: 20px; }
   .entry li { margin-bottom: 4px; font-size: 0.9rem; }
   .entry-italic { font-style: italic; font-size: 0.88rem; color: var(--muted); margin: 4px 0; }
+  .venue-line { font-size: 0.9rem; margin: 0 0 6px; }
+  .venue-line em { font-style: italic; }
+  .flag-icon { display: block; width: 28px; height: auto; margin: 2px 0 0; }
   p.intro-text { font-size: 0.92rem; color: var(--text); }
   .tag-line { font-size: 0.9rem; }
   a.inline-link { color: var(--accent2); }
+  a.yt-link { display: inline-flex; align-items: center; gap: 6px; }
+  .yt-icon { width: 18px; height: auto; display: inline-block; vertical-align: middle; }
   mark {
     background: #111111;
     color: #ffffff;
@@ -169,11 +175,10 @@
     <div class="entry">
       <div class="with-photo">
         <div class="li-text">
-          <div class="entry-title">Beyond Native Speakerism: A Bourdieusian Perspective on Habitus and Cultural Capital among South Korean University Students</div>
+          <div class="entry-title">Kang, J. Beyond Native Speakerism: A Bourdieusian Perspective on Habitus and Cultural Capital among South Korean University Students.</div>
           <div class="entry-sub">Sep. 2026</div>
-          <ul>
-            <li><strong>Kang, J.</strong> — <em>Applied Linguistics Association of Korea International Conference (ALAK)</em>, Seoul, Korea.</li>
-          </ul>
+          <div class="venue-line"><em>Applied Linguistics Association of Korea International Conference (ALAK)</em>, Seoul, Korea.</div>
+          <img class="flag-icon" src="images/flag-kr.png" alt="South Korea flag">
         </div>
         <div class="li-photo">
           <img src="images/presentation-1.jpg" alt="Presenting at ALAK 2026">
@@ -183,11 +188,10 @@
     <div class="entry">
       <div class="with-photo">
         <div class="li-text">
-          <div class="entry-title">Toward Accessible Automated Scoring: Using ChatGPT to Assess EIT Responses</div>
+          <div class="entry-title">Park, H. I., &amp; Kang, J. Toward Accessible Automated Scoring: Using ChatGPT to Assess EIT Responses.</div>
           <div class="entry-sub">Sep. 2025</div>
-          <ul>
-            <li>Park, H. I., &amp; <strong>Kang, J.</strong> — <em>Second Language Research Forum (SLRF)</em>, AZ, U.S.</li>
-          </ul>
+          <div class="venue-line"><em>Second Language Research Forum (SLRF)</em>, AZ, U.S.</div>
+          <img class="flag-icon" src="images/flag-us.png" alt="United States flag">
         </div>
         <div class="li-photo">
           <img src="images/presentation-2.jpg" alt="Presenting at SLRF 2025">
@@ -195,20 +199,25 @@
       </div>
     </div>
     <div class="entry">
-      <div class="entry-title">Toward Accessible Automated Scoring: Using ChatGPT to Assess EIT Responses</div>
-      <div class="entry-sub">Sep. 2025</div>
-      <ul>
-        <li>Park, H. I., &amp; <strong>Kang, J.</strong> — <em>Applied Linguistics Association of Korea International Conference (ALAK)</em>, Seoul, Korea.</li>
-      </ul>
+      <div class="with-photo">
+        <div class="li-text">
+          <div class="entry-title">Park, H. I., &amp; Kang, J. Toward Accessible Automated Scoring: Using ChatGPT to Assess EIT Responses.</div>
+          <div class="entry-sub">Sep. 2025</div>
+          <div class="venue-line"><em>Applied Linguistics Association of Korea International Conference (ALAK)</em>, Seoul, Korea.</div>
+          <img class="flag-icon" src="images/flag-kr.png" alt="South Korea flag">
+        </div>
+        <div class="li-photo">
+          <img src="images/presentation-alak-2025.jpg" alt="Presenting at ALAK 2025">
+        </div>
+      </div>
     </div>
     <div class="entry">
       <div class="with-photo">
         <div class="li-text">
-          <div class="entry-title">Ethical Issues in Quoting Foreign Media: A Case Study in the Itaewon Crowd Crush in South Korea</div>
+          <div class="entry-title">Kang, J. Ethical Issues in Quoting Foreign Media: A Case Study in the Itaewon Crowd Crush in South Korea.</div>
           <div class="entry-sub">Mar. 2024</div>
-          <ul>
-            <li><strong>Kang, J.</strong> — <em>PolyU Undergraduate Conference on Applied Linguistics and Language Studies (PolyU-CALLS)</em>, Hong Kong.</li>
-          </ul>
+          <div class="venue-line"><em>PolyU Undergraduate Conference on Applied Linguistics and Language Studies (PolyU-CALLS)</em>, Hong Kong.</div>
+          <img class="flag-icon" src="images/flag-hk.png" alt="Hong Kong flag">
         </div>
         <div class="li-photo">
           <img src="images/presentation-hongkong.jpg" alt="Presenting at PolyU-CALLS 2024, Hong Kong">

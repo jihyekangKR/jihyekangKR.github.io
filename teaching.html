@@ -66,7 +66,7 @@
     flex: 1 1 280px;
     max-width: 340px;
   }
-  .with-photo img {
+  .with-photo .li-photo img {
     width: 100%;
     height: auto;
     border-radius: 6px;
@@ -91,11 +91,12 @@
     text-decoration: none;
     font-size: 0.85rem;
     font-family: 'Noto Serif', 'Noto Serif KR', serif;
-    padding: 4px 2px;
-    border-bottom: 2px solid transparent;
+    padding: 6px 10px;
+    border-radius: 4px;
+    transition: background-color 0.15s ease, color 0.15s ease;
   }
-  nav a:hover { border-bottom-color: var(--accent2); }
-  nav a.active { border-bottom-color: var(--accent2); color: var(--accent2); font-weight: bold; }
+  nav a:hover { background-color: var(--accent2); color: var(--bg); }
+  nav a.active { background-color: var(--accent2); color: var(--bg); font-weight: bold; }
 
   main {
     max-width: 780px;
@@ -117,9 +118,14 @@
   .entry ul { margin: 6px 0 0; padding-left: 20px; }
   .entry li { margin-bottom: 4px; font-size: 0.9rem; }
   .entry-italic { font-style: italic; font-size: 0.88rem; color: var(--muted); margin: 4px 0; }
+  .venue-line { font-size: 0.9rem; margin: 0 0 6px; }
+  .venue-line em { font-style: italic; }
+  .flag-icon { display: block; width: 28px; height: auto; margin: 2px 0 0; }
   p.intro-text { font-size: 0.92rem; color: var(--text); }
   .tag-line { font-size: 0.9rem; }
   a.inline-link { color: var(--accent2); }
+  a.yt-link { display: inline-flex; align-items: center; gap: 6px; }
+  .yt-icon { width: 18px; height: auto; display: inline-block; vertical-align: middle; }
   mark {
     background: #111111;
     color: #ffffff;
@@ -179,7 +185,7 @@
       <div class="entry-sub">Apr. 2026 – Jun. 2026</div>
       <ul>
         <li>Developed video tutorials using JASP to explain t-tests, correlation, and regression for the graduate course <em>Research Methods in Applied Linguistics</em>.</li>
-        <li>Sample teaching material link: <a class="inline-link" href="https://youtu.be/1G7sfO6Zfb8?si=nFxmvu0fmC9bRemE" target="_blank" rel="noopener">JASP statistics tutorial</a></li>
+        <li>Sample teaching material link: <a class="inline-link yt-link" href="https://youtu.be/1G7sfO6Zfb8?si=nFxmvu0fmC9bRemE" target="_blank" rel="noopener"><img src="images/youtube-icon.png" alt="" class="yt-icon">JASP statistics tutorial</a></li>
       </ul>
     </div>
     <div class="entry">
