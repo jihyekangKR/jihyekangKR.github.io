@@ -4,6 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Publications — Jihye Kang</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&family=Noto+Serif+KR:wght@400;700&display=swap" rel="stylesheet">
 <style>
   :root {
     --bg: #ffffff;
@@ -17,7 +20,7 @@
   * { box-sizing: border-box; }
   body {
     margin: 0;
-    font-family: 'Courier New', 'Noto Sans Mono CJK KR', monospace;
+    font-family: 'Noto Serif', 'Noto Serif KR', serif;
     background: var(--bg);
     color: var(--text);
     line-height: 1.6;
@@ -32,8 +35,9 @@
   header p.role {
     color: var(--muted);
     font-size: 0.95rem;
-    margin: 0 0 16px;
+    margin: 0 0 2px;
   }
+  header p.role + p.role { margin: 0 0 16px; }
   header .contact { font-size: 0.9rem; color: var(--muted); }
   header .contact a { color: var(--accent2); text-decoration: none; }
   header .contact a:hover { text-decoration: underline; }
@@ -86,7 +90,7 @@
     color: var(--text);
     text-decoration: none;
     font-size: 0.85rem;
-    font-family: 'Courier New', monospace;
+    font-family: 'Noto Serif', 'Noto Serif KR', serif;
     padding: 4px 2px;
     border-bottom: 2px solid transparent;
   }
@@ -127,7 +131,7 @@
     padding: 28px 24px;
     color: var(--muted);
     font-size: 0.8rem;
-    font-family: 'Courier New', monospace;
+    font-family: 'Noto Serif', 'Noto Serif KR', serif;
     border-top: 1px solid var(--line);
   }
   @media (max-width: 600px) {
@@ -140,7 +144,8 @@
 
 <header>
   <h1><a href="index.html">Jihye Kang</a></h1>
-  <p class="role">M.A. Candidate, Applied English Linguistics &amp; Translation Studies · Kyung Hee University</p>
+  <p class="role">M.A. Candidate, Applied English Linguistics &amp; Translation Studies</p>
+  <p class="role">Kyung Hee University</p>
   <p class="contact">
     <a href="mailto:wiz8838@khu.ac.kr">wiz8838@khu.ac.kr</a>
   </p>
@@ -148,7 +153,6 @@
 
 <nav>
   <a href="education.html">Education</a>
-  <a href="research-interests.html">Research Interests</a>
   <a href="publications.html" class="active">Publications</a>
   <a href="presentations.html">Presentations</a>
   <a href="research-experience.html">Research Experience</a>
