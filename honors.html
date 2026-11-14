@@ -43,11 +43,9 @@
   header .contact a:hover { text-decoration: underline; }
   header.has-banner { padding: 56px 24px 32px; }
   header .banner {
+    max-width: 260px;
     width: 100%;
-    max-width: 200px;
-    aspect-ratio: 1 / 1;
-    object-fit: cover;
-    border-radius: 50%;
+    height: auto;
     margin: 0 auto 18px;
     display: block;
     box-shadow: 0 2px 10px rgba(0,0,0,0.08);
@@ -78,8 +76,9 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 6px 18px;
-    padding: 14px 24px;
+    align-items: stretch;
+    gap: 0 2px;
+    padding: 0 16px;
     background: var(--card);
     border-bottom: 1px solid var(--line);
     position: sticky;
@@ -87,12 +86,13 @@
     z-index: 10;
   }
   nav a {
+    display: flex;
+    align-items: center;
     color: var(--text);
     text-decoration: none;
-    font-size: 0.85rem;
+    font-size: 1rem;
     font-family: 'Noto Serif', 'Noto Serif KR', serif;
-    padding: 6px 10px;
-    border-radius: 4px;
+    padding: 14px 14px;
     transition: background-color 0.15s ease, color 0.15s ease;
   }
   nav a:hover { background-color: var(--accent2); color: var(--bg); }
@@ -114,6 +114,8 @@
   }
   .entry { margin-bottom: 20px; }
   .entry-title { font-weight: bold; font-size: 0.98rem; }
+  .pres-title { font-weight: normal; font-size: 0.98rem; }
+  .inst-line { font-size: 0.9rem; margin: 2px 0 0; }
   .entry-sub { color: var(--muted); font-size: 0.88rem; margin: 2px 0 8px; }
   .entry ul { margin: 6px 0 0; padding-left: 20px; }
   .entry li { margin-bottom: 4px; font-size: 0.9rem; }
@@ -173,53 +175,37 @@
   <section>
     <h2>Honors, Awards &amp; Funding</h2>
     <div class="entry">
-      <div class="entry-title">Alternate Candidate, Fulbright Graduate Student Program Award</div>
+      <div class="entry-title">Alternate Candidate, Fulbright Graduate Student Program Award — <em>Korean-American Educational Commission (KAEC)</em></div>
       <div class="entry-sub">2027</div>
-      <ul>
-        <li><em>Korean-American Educational Commission (KAEC)</em></li>
-      </ul>
     </div>
     <div class="entry">
-      <div class="entry-title">Teaching Assistantship</div>
+      <div class="entry-title">Teaching Assistantship — Graduate School of Kyung Hee University</div>
       <div class="entry-sub">Mar. 2025 – Aug. 2026</div>
-      <ul>
-        <li>Graduate School of Kyung Hee University — Full tuition waiver awarded for academic and teaching assistance.</li>
-      </ul>
+      <ul><li>Full tuition waiver awarded for academic and teaching assistance.</li></ul>
     </div>
     <div class="entry">
-      <div class="entry-title">Conference Presentation Grant (ALAK 2025)</div>
+      <div class="entry-title">Conference Presentation Grant (ALAK 2025) — Graduate School of Kyung Hee University</div>
       <div class="entry-sub">Sep. 2025</div>
-      <ul>
-        <li>Graduate School of Kyung Hee University — Awarded to support presentation at the Applied Linguistics Association of Korea International Conference (ALAK).</li>
-      </ul>
+      <ul><li>Awarded to support presentation at the Applied Linguistics Association of Korea International Conference (ALAK).</li></ul>
     </div>
     <div class="entry">
-      <div class="entry-title">Conference Presentation Grant (SLRF 2025)</div>
+      <div class="entry-title">Conference Presentation Grant (SLRF 2025) — Graduate School of Kyung Hee University</div>
       <div class="entry-sub">Sep. 2025</div>
-      <ul>
-        <li>Graduate School of Kyung Hee University — Awarded to support presentation at Second Language Research Forum (SLRF).</li>
-      </ul>
+      <ul><li>Awarded to support presentation at Second Language Research Forum (SLRF).</li></ul>
     </div>
     <div class="entry">
-      <div class="entry-title">Daniel Scholarship for Future Leaders</div>
+      <div class="entry-title">Daniel Scholarship for Future Leaders — Global Mission Church</div>
       <div class="entry-sub">Sep. 2025</div>
-      <ul>
-        <li>Global Mission Church — Awarded in recognition of leadership potential and commitment to community service.</li>
-      </ul>
+      <ul><li>Awarded in recognition of leadership potential and commitment to community service.</li></ul>
     </div>
     <div class="entry">
-      <div class="entry-title">Conference Travel Grant</div>
+      <div class="entry-title">Conference Travel Grant — Hong Kong Polytechnic University</div>
       <div class="entry-sub">Mar. 2024</div>
-      <ul>
-        <li>Hong Kong Polytechnic University — Supported presentation at PolyU Undergraduate Conference on Applied Linguistics and Language Studies (PolyU-CALLS).</li>
-      </ul>
+      <ul><li>Supported presentation at PolyU Undergraduate Conference on Applied Linguistics and Language Studies (PolyU-CALLS).</li></ul>
     </div>
     <div class="entry">
-      <div class="entry-title">Mosaic Scholarship for Language Excellence</div>
+      <div class="entry-title">Mosaic Scholarship for Language Excellence — Kyung Hee University</div>
       <div class="entry-sub">Aug. 2021</div>
-      <ul>
-        <li>Kyung Hee University</li>
-      </ul>
     </div>
   </section>
 
